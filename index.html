@@ -129,12 +129,13 @@
 		</div>
 	</header>
 	<div id="slider-container" class="flex-row-between">
-		<div id="slider-mask">
-			<ul id ="slide">
+		<div id="slider-mask" class="w85 mask_for_slider">
+			<ul id ="slide" class="slide_styles">
 				<li><a href="#">
 					<img src="img/slide_1.jpeg"   alt="">
 					<p>У Зеленського опублікували його перший указ</p>
-				</a></li>
+					</a>
+				</li>
 				<li><a href="#">
 					<img src="img/slide_2.jpg"  alt="">
 					<p>Клієнти адвоката Трампа написали заяву на Коломойського</p>
@@ -170,8 +171,8 @@
 			</ul>
 		</div>
 		<div id="slider-controlls" class="">
-			<button id ="prev" onclick="sliding(this.id)">←</button>
-			<button id ="next" onclick="sliding(this.id)">→</button>	
+			<button id ="prev" class="slider-btn-style" onclick="sliding(this.id)">🡠</button>
+			<button id ="next" class="slider-btn-style" onclick="sliding(this.id)">🡢</button>	
 		</div>
 			
 	</div>
@@ -179,7 +180,7 @@
 	<div id="main" class="flex-row-between">
 		<div id="main-newsBar">
 			<div class="flex-row-between mBottom5">
-				<div class="newsBar-header"><b>НОВИНИ</b></div>
+				<div class="redHeader">НОВИНИ</div>
 				<div id="newsBar-header-list">
 					<a href="">ОСТАННI</a>
 					<a href="">ГОЛОВНI</a>	
@@ -429,7 +430,7 @@
 			<div class="allNews">
 				<a href=""  class="flex-row-between">
 					<div class="font8pt">УСI НОВИНИ</div>
-					<div class="font12pt">→</div>
+					<div class="font12pt">🡢</div>
 					
 				</a>
 			</div>
@@ -440,11 +441,11 @@
 			<div id="center-news">
 
 				<div>
-				<img src="img/bab.jpg" alt="babachenko" class="w100">
-				<h2>У Кремлі прокоментували вбивство Бабченка</h2>
-				<p>Вбивство журналіста замовили російські спецслужби через посередника в Україні. Виконавець – колишній учасник АТО.</p>
-				<p class="small-silvel-letters">30 ТРАВНЯ 2018, 13:57</p>
-			</div>
+					<img src="img/bab.jpg" alt="babachenko" class="w100">
+					<h2>У Кремлі прокоментували вбивство Бабченка</h2>
+					<p>Вбивство журналіста замовили російські спецслужби через посередника в Україні. Виконавець – колишній учасник АТО.</p>
+					<p class="small-silvel-letters">30 ТРАВНЯ 2018, 13:57</p>
+				</div>
 
 			<div class="borderTopGray paddingTop10 flex-row-between">
 				<div class="news-newsBar font12pt"><b>ДОКЛАДНО</b></div>
@@ -551,31 +552,30 @@
 			<div class="allNews">
 						<a href=""  class="flex-row-between">
 							<div class="font8pt">УСI ПУБЛIКАЦII</div>
-							<div class="font12pt">→</div>
+							<div class="font12pt">🡢</div>
 							
 						</a>
 					</div>
 		</div>
 
 
-
-
-
-
-
 		<div id="main-sideBar" class="">
+			<div >
+				<iframe width="100%" height="170" src="https://www.youtube.com/embed/jkCejZIHCuo?autoplay=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
 
-			<hr>
-			<div>
-				<div class="float-l">
-					<b>БЛОГИ</b>
-				</div>
-				<div id="" class="float-r">
-					<a href="">--</a> |
-					<a href="">--</a>	
+			<div class="marginX15"></div>
+				<p class="small-silvel-letters">РЕКЛАМА:</p>
+				
+				<img src="https://masterh5.adriver.ru/images/0006051/0006051358/0/tek-light2.gif">
+			</div>	
+			<div id="blog-header" class="flex-row-between">
+				<div class="redHeader flex-align-center">БЛОГИ</div>
+				<div id="blog-slider-controlls" class="">
+					<button id="blog-btn-prev" class="slider-btn-style">🡠</button>
+					<button id="blog-btn-next" class="slider-btn-style">🡢</button>	
 				</div>
 			</div>
-			<hr class="clearfix">
+			
 			<div class="left-sideBar ">
 				<img src="img/L1.jpg" alt="" align="left">
 				<p>ДМИТРО ДОБРОДОМОВ</p>
@@ -583,36 +583,17 @@
 				<hr class="clearfix">
 
 				<b>КОЛОНКИ</b>
-				
-
 			</div>
+
+
+
 			<div class="left-sideBar ">
 				<img src="img/L2.jpg" alt="" align="left">
 				<p>ВІКТОРІЯ ПТАШНИК</p>
 				<p><b>Дню захисту дитини присвячується</b></p>
 				<p>Право вагітної на інформацію – це не тільки право знати певні дані, але й право НЕ знати їх, якщо вагітна не хоче.</p>
 			</div>
-			<hr>
-			<div class="left-sideBar ">
-				<img src="img/L3.jpg" alt="" align="left">
-				<p>ОКСАНА ЧЕПІЖКО</p>
-				<p><b>Вибори під час війни: як говорити з Донбасом?</b></p>
-				<p>Перетворюючись на елемент політичної агітації, комунікація з Донбасом втрачає не тільки свій продуктивний зміст, а й реального адресата. (рос.)</p>
-			</div>
-			<hr>
-			<div class="left-sideBar ">
-				<img src="img/L4.jpg" alt="" align="left">
-				<p>АНТОНІНА СЛІПЧЕНКО</p>
-				<p><b>"Не на часі": чому дитяча політика України суперечить курсу на ЄС</b></p>
-				<p>Дітей заохочують вступати в ефективну комунікацію з політиками, не боятися висловлювати власну думку про те, яким вони бачать своє життя. Така практика в Європі переходить на рівень державної політики.</p>
-			</div>
-			<hr>
-			<div class="left-sideBar ">
-				<img src="img/L5.jpg" alt="" align="left">
-				<p>ЛАРИСА БОДНАР</p>
-				<p><b>"Майже законно": хто і чому не повертає в Україну валютну виручку</b></p>
-				<p>Як великі компанії обходять законодавство про повернення валютної виручки в країну?</p>
-			</div>
+	
 			<hr>
 			<div class="left-sideBar ">
 				<img src="img/L2.jpg" alt="" align="left">
@@ -646,22 +627,247 @@
 				<a href="https://twitter.com/ukrpravda_news?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @ukrpravda_news</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 				
 			</div>
-			<br>
-			
 			<div >
 				<img src="img/L11.jpg" alt="">
 
 			</div>
-			<br>
-			<div>
-				<img src="img/L12.jpg" alt="">
-			</div>
+			
+			
 
 		</div>
-		<footer>hhhhh</footer>
+	</div>
+	<div id="popular-news">	
+			<div id="popular-news-header" class="flex-row-between">	
+				<a href="#" class="redHeader">ПОПУЛЯРНІ</a>
+				<div>
+					<a href="#" class="small-red-letters marginY15">ЗА ПЕРЕГЛЯДАМИ</a>
+					<a href="#" class="small-silvel-letters marginY15">В СОЦМЕРЕЖАХ</a>
+					<a href="#" class="small-silvel-letters marginLeft15">ВИБІР РЕДАКТОРА</a>
+				</div>	
+			</div>
+			<div id="popular-news-content" class="flex-row-between marginX15">
+				<div class="flex-row-between w25">
+					<div class="redBigFont marginY15">1</div>
+					<div class="marginLeft15">
+						<a href="#">Зеленський призначив нового головнокомандувача Збройних сил</a>
+						<p class="small-silvel-letters">253346</p>
+					</div>
+				</div>
+				<div class="flex-row-between w25 borderLeftSilver">
+					<div class="redBigFont marginY15">2</div>
+					<div class="marginLeft15">
+						<a href="#">Зеленський призначив співвласника "Кварталу 95" своїм першим помічником</a>
+						<p class="small-silvel-letters">253556</p>
+					</div>
+				</div>
+				<div class="flex-row-between w25 borderLeftSilver">
+					<div class="redBigFont marginY15">3</div>
+					<div class="marginLeft15">
+						<a href="#">Рада провалила закони Зеленського про вибори</a>
+						<p class="small-silvel-letters">253364</p>
+					</div>
+				</div>
+				<div class="flex-row-between w25 borderLeftSilver">
+					<div class="redBigFont marginY15">4</div>
+					<div class="marginLeft15">
+						<a href="#">Зеркаль відмовилась від посади заступника глави АП - джерела</a>
+						<p class="small-silvel-letters">253390</p>
+					</div>
+				</div>
+				<div class="flex-row-between w25 borderLeftSilver">
+					<div class="redBigFont marginY15">5</div>
+					<div class="marginLeft15">
+						<a href="#">Стали відомі кадрові призначення в адміністрації президента Зеленського</a>
+						<p class="small-silvel-letters">253387</p>
+					</div>
+				</div>
+				
+			</div>
+	</div>
+	<div id="greyArticle">
+		<div id="slider-greyArticle">
+			<div id="slider-greyArticle-header" class="flex-row-between">
+				<a href="" class="redHeader">ЧИТАЙТЕ, ДИВІТЬСЯ...</a>
+				<div id="slider-greyArticle-control">
+					<button id ="greyArticle-prev" class="slider-btn-style" onclick="sliding(this.id)">🡠</button>
+					<button id ="greyArticle-next" class="slider-btn-style" onclick="sliding(this.id)">🡢</button>	
+				</div>
+			
+			</div>
+			<div id="slider-greyArticle-mask" class="w100 mask_for_slider">
+				<ul id ="greyArticle_slide" class="slide_styles">
+					<li class="greySlide">
+						<a href="#" >
+							<img src="img/greySlide_1.jpg.">
+							<div class="greySlide_overlay">
+								<div class="greySlide_rubric">їжа</div>
+								<h3 class="greySlide_title">10 фото, які надихають думати про те, що ми їмо</h3>
+							</div>
+						</a>		
+					</li>
+					<li class="greySlide">
+						<a href="#">
+							<img src="img/greySlide_2.jpg">
+							<div class="greySlide_overlay">
+								<div class="greySlide_rubric">дослідження</div>
+								<h3 class="greySlide_title">Коли українські підлітки починають займатися сексом</h3>
+							</div>
+						</a>		
+					</li>
+					<li class="greySlide">
+						<a href="#">
+							<img src="img/greySlide_3.jpg">
+							<div class="greySlide_overlay">
+								<div class="greySlide_rubric">дослідження</div>
+								<h3 class="greySlide_title">Кожен восьмий український підліток залежний від соцмереж</h3>
+							</div>
+						</a>		
+					</li>
+					<li class="greySlide">
+						<a href="#">
+							<img src="img/greySlide_4.jpg">
+							<div class="greySlide_overlay">
+								<div class="greySlide_rubric">здоров'я</div>
+								<h3 class="greySlide_title">Грип 2019: симптоми, лікування, як передається і як відрізнити від застуди</h3>	
+							</div>
+						</a>	
+					</li>
+					<li class="greySlide">
+						<a href="#">
+							<img src="img/greySlide_5.jpg">
+							<div class="greySlide_overlay">
+								<div class="greySlide_rubric">психологія</div>
+								<h3 class="greySlide_title">15 запитань, які варто ставити дітям для покращення їхнього мислення</h3>
+							</div>
+						</a>		
+					</li>
+					<li class="greySlide">
+						<a href="#">
+							<img src="img/greySlide_6.jpg">
+							<div class="greySlide_overlay">
+								<div class="greySlide_rubric">здоров'я</div>
+								<h3 class="greySlide_title">Мікрохвильовка: користь чи шкода</h3>
+							</div>
+						</a>		
+					</li>
+					<li class="greySlide">
+						<a href="#">
+							<img src="img/greySlide_7.jpg">
+							<div class="greySlide_overlay">
+								<div class="greySlide_rubric">тест</div>
+								<h3 class="greySlide_title">Гра престолів: хто кому брат, сестра, родич і коханий?</h3>	
+							</div>
+						</a>	
+					</li>
+					<li class="greySlide">
+						<a href="#">
+							<img src="img/greySlide_8.jpg">
+							<div class="greySlide_overlay">
+								<div class="greySlide_rubric">дослідження</div>
+								<h3 class="greySlide_title">Учені знайшли новий спосіб лікувати шкірні рани</h3>
+							</div>
+						</a>		
+					</li>
+					<li class="greySlide">
+						<a href="#">
+							<img src="img/greySlide_9.jpg">
+							<div class="greySlide_overlay">
+								<div class="greySlide_rubric">Досвід</div>
+								<h3 class="greySlide_title">Як створити школу верхової їзди</h3>
+							</div>
+						</a>	
+
+					</li>
+					
+				</ul>
+			</div>
+			<div id="tabloid_article" class="borderTopRed" >
+				<div id="tabloid_article_header" class="redHeader paddingY10"> ТАБЛОID</div>
+					<div id="tabloid_article_content" class="flex-row-between">
+					<div class="w25">
+						<a href="#">
+							<img src="img/tabloid_1.jpg">
+							<h3 class="tabloid_article_title">Як Потап Настю заміж брав. ФОТО і ВІДЕО з весілля</h3>
+						</a>
+					</div>
+					<div class="w15">
+						<a href="#">
+							<img src="img/tabloid_2.jpg">
+							<h3 class="tabloid_article_title">"Кобзар" та "Політика для початківців": Зеленський розжився книжками на Арсеналі</h3>
+						</a>
+					</div>
+					<div class="w25">
+						<a href="#">
+							<img src="img/tabloid_3.jpg">
+							<h3 class="tabloid_article_title">Лобода у високих трусах і шкіряному ліфчику знялася на тлі квіточок</h3>
+						</a>
+					</div>
+					<div class="w15">
+						<a href="#">
+							<img src="img/tabloid_4.jpg">
+							<h3 class="tabloid_article_title">Танці в пилу: Огнєвіч зняла антигламур на покинутому заводі</h3>
+						</a>
+					</div>
+					<div class="w15">
+						<a href="#">
+							<img src="img/tabloid_5.jpg">
+							<h3 class="tabloid_article_title">Танці в пилу: Огнєвіч зняла антигламур на покинутому заводі</h3>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div id="list_of_news_article" class="flex-row-between">
+				<div class="w18 borderTopRed">
+					<div class="list_of_news_article_header redHeader paddingY10">ЕКОНОМІКА</div>
+						<div class="bTopSilver paddingY10 bold">
+							<a href="#">Ігор Коломойський: Поверніть мої акції в Приватбанку! Зарахуйте мені мої 50-60 мільярдів!</a>
+						</div>
+						<div class="bTopSilver paddingY10"><a href="#">Як накопичувати кошти на пенсію в недержавному пенсійному фонді</a></div>
+						<div class="bTopSilver paddingY10"><a href="#">Паспорт від Путіна. Чи зможе Україна покарати "нових росіян"</a></div>
+						<div class="bTopSilver paddingY10"><a href="#">Керівники GlobalLogic: Україна йде по шляху Кремнієвої долини</a></div>
+					
+				</div>
+				<div class="w18 borderTopRed ">
+					<div class="list_of_news_article_header redHeader paddingY10">ЖИТТЯ</div>
+						<div class="bTopSilver paddingY10 bold"><a href="#">9 книг, які варто купити будь-якій родині на Книжковому Арсеналі</a></div>
+						<div class="bTopSilver paddingY10"><a href="#">Як знайти себе у світі моди. Мій досвід навчання fashion-маркетингу у Європі</a></div>
+						<div class="bTopSilver paddingY10"><a href="#">Щоб подолати кліматичну кризу, доведеться скоротити робочий час – вчені</a></div>
+						<div class="bTopSilver paddingY10"><a href="#">Вам листівка! З рядком вірша Жадана. Як "роздІловІ" популяризують українську поезію</a></div>
+					
+				</div>
+				<div class="w18 borderTopRed">
+					<div class="list_of_news_article_header redHeader paddingY10">ЄВРОПА ТА СВІТ</div>
+						<div class="bTopSilver paddingY10 bold"><a href="#">Волкер розповів у Білому домі про поїздку на інавгурацію Зеленського</a></div>
+						<div class="bTopSilver paddingY10"><a href="#">Прем’єр Британії призначила нового лідера Палати громад</a></div>
+						<div class="bTopSilver paddingY10"><a href="#">Сотні громадян ЄС не змогли проголосувати у Британії на виборах до Європарламенту</a></div>
+						<div class="bTopSilver paddingY10"><a href="#">Швейцарія не підпише нову угоду з ЄС - ЗМІ</a></div>
+					
+				</div>
+				<div class="w18 borderTopRed">
+					<div class="list_of_news_article_header redHeader paddingY10">ІСТОРІЯ</div>
+						<div class="bTopSilver paddingY10 bold"><a href="#">Директор ТЕК Олександр Семененко: Що буде після запуску нового ринку електроенергії та як знизити суми у квитанціях</a></div>
+						<div class="bTopSilver paddingY10"><a href="#">Гендиректор COFCO Agri Ukraine Володимир Осадчук: про Китай, проблеми із залізничним транспортом та інвестиції в Україну</a></div>
+						<div class="bTopSilver paddingY10"><a href="#">алізничним транспортом та інвестиції в Україну
+Магія засобів захисту рослин, або як створюють препарати ЗЗР</a></div>
+						
+					
+				</div>
+				<div class="w18 borderTopRed">
+					<div class="list_of_news_article_header redHeader paddingY10">СПЕЦПРОЕКТИ</div>
+						<div class="bTopSilver paddingY10 bold"><a href="#">Прем'єр Польщі переконаний: поляки найбільше постраждали у Другій Світовій</a></div>
+						<div class="bTopSilver paddingY10"><a href="#">У російський «Безсмертний полк» потрапив відомий нацист – Гейдріх. ФОТО</a></div>
+						<div class="bTopSilver paddingY10"><a href="#">АНОНС: В усіх обласних центрах України відкриють виставку про в'язнів нацистських концтаборів</a></div>
+						<div class="bTopSilver paddingY10"><a href="#">Президент Порошенко присвоїв почесні найменування трьом військовим частинам ЗСУ</a></div>
+						
+						
+					
+				</div>
+			</div>
+		</div>
+
 
 	</div>
-
+	<footer></footer>
 <script src="script.js"></script>	
 </body>
 </html>
