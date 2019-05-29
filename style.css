@@ -50,9 +50,6 @@ header ul,
 .w85{
  	width: 85%;
 }
-.w90{
- 	width: 90%;
-}
 .w100{
  	width: 100%;
 }
@@ -650,7 +647,7 @@ footer a{
 		width:100% !important;
 	}
 	#tabloid_article_content h3{
-		margin-top:5px;
+		margin:5px 0 20px;
 	}
 	#popular-news-header-nav a{
 		font-size: 7pt;
