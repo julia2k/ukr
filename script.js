@@ -1,13 +1,13 @@
 
 
-function slider(quantityOfElementsInRow){
+function slider(quantityOfElementsInRow1,quantityOfElementsInRow2){
 	document.getElementById("slider-mask").style.display="block";
 	document.getElementById("slider-greyArticle-mask").style.display="block";
 
 	var sliderMaskWidth=document.getElementById("slider-mask").getBoundingClientRect().width;
 	var greySliderMaskWidth=document.getElementById("slider-greyArticle-mask").getBoundingClientRect().width;
-	var slideWidth=sliderMaskWidth/quantityOfElementsInRow-15;
-	var greyslideWidth=greySliderMaskWidth/quantityOfElementsInRow;
+	var slideWidth=sliderMaskWidth/quantityOfElementsInRow1-15;
+	var greyslideWidth=greySliderMaskWidth/quantityOfElementsInRow2;
 	var slides=document.getElementById("slide").getElementsByTagName("li");
 	var greySlides=document.getElementsByClassName("greySlide");
 	for(let i=0; i<slides.length; i++){
@@ -16,17 +16,19 @@ function slider(quantityOfElementsInRow){
 	for(let j=0; j<greySlides.length; j++){
 		greySlides[j].style.width= greyslideWidth+"px";	
 	}
-	console.log(quantityOfElementsInRow);
+	// console.log(quantityOfElementsInRow);
 }
 
 function sliderRensponsivity(windowWidth){
 
 	if(windowWidth<1025 && windowWidth>=700){
-	    slider(2);	
-	}else if(windowWidth<700){
-		slider(1);	
+	    slider(2,2);	
+	}else if(windowWidth<700 && windowWidth>600){
+		slider(1,2);	
+	}else if(windowWidth<600){
+		slider(1,1);	
 	}else{
-		slider(3);
+		slider(3,3);
 	}
 }
 window.onload = function() {
